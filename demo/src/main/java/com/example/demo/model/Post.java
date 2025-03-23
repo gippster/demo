@@ -1,8 +1,11 @@
 package com.example.demo.model;
 
+import java.util.Date;
+
 public class Post {
     private String text;
-    private Integer likes;
+    private Integer likes = 0;
+    private Date creationDate;
 
     public Post(String text)
     {
@@ -13,7 +16,10 @@ public class Post {
     {
         return text;
     }
-
+    public Date getCreationDate()
+    {
+        return creationDate;
+    }
     public Integer getLikes()
     {
         return likes;
